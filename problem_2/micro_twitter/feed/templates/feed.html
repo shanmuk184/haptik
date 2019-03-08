@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+  <h2>Tweet</h2>
+  Hi {{ user.username }}!
+  <ul>
+    {% for tweet in data.feed %}
+        <li>"{{ tweet.text }}" by {{tweet.user.username}}</li>
+    {% endfor %}
+    </ul>
+  
+  <p><a href="{% url 'tweet' %}">tweet</a></p>
+  <p><a href="{% url 'follow' %}">Follow</a></p>
+    {{ data }}
+{% endblock %}
