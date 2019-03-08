@@ -1,4 +1,3 @@
-
 def creation(input_string, strings): 
     size = len(input_string)
     if size == 0:
@@ -11,3 +10,6 @@ def creation(input_string, strings):
 
 strings = ["front", "back", "end", "yard", "pain"]
 print(creation("backend", strings))
+print(creation("frontend", strings))
+print(creation("frontyard", strings))
+print(creation("ending", strings))
